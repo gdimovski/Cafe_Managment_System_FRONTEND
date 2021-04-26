@@ -64,8 +64,7 @@ const Products = () => {
             },
         })
             .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
+            .then(() => {
                 const latestProducts = products.filter(t => t.id !== id);
                 setProducts(latestProducts);
             })

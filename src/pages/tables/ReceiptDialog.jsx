@@ -19,8 +19,7 @@ function ReceiptDialog({ deskId, isOpen, handleToggleDialog, history }) {
                 'Content-Type': 'application/json',
             },
         })
-            .then(data => {
-            console.log(data);
+            .then(() => {
                 history.push('/receipts')
             })
             .catch((error) => {
@@ -38,8 +37,6 @@ function ReceiptDialog({ deskId, isOpen, handleToggleDialog, history }) {
             })
                 .then(data => data.json())
                 .then(response => {
-
-                    console.log(response);
                     setOrders(response);
                 });
         }
