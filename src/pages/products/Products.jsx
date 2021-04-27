@@ -200,6 +200,7 @@ const Products = () => {
                     </form>
                 </DialogContent>
                 <DialogActions>
+
                     <Button autoFocus onClick={editMode ? handleUpdateProduct : handleAddProducts} color="primary">
                         Save changes
                     </Button>

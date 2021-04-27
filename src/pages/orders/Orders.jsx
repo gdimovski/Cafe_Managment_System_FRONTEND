@@ -38,7 +38,20 @@ const Orders = () => {
     }, []);
 
     const handleDeleteOrder = id => {
-        console.log(id);
+        fetch('http://localhost:3000/rest/orders/delete/'+ id, {
+            method: 'DELETE', // or 'PUT'
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then(response => response.json())
+            .then(() => {
+                const latestOrders = orders.filter(t => t.id !== id);
+                setOrders(latestOrders);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (

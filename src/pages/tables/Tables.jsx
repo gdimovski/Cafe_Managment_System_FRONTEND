@@ -106,6 +106,7 @@ const Tables = () => {
     }
 
     const handleAddItemsToOrder = () => {
+
         fetch('http://localhost:3000/rest/desk/'+ desk + '/orders/create', {
             method: 'POST', // or 'PUT'
             headers: {

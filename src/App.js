@@ -5,6 +5,8 @@ import Receipts from "./pages/receipts/Receipts";
 import Orders from "./pages/orders/Orders";
 import ActiveOrders from "./pages/orders/ActiveOrders";
 import Bootstrapper from "./pages/bootstrapper/Bootstrapper";
+import Register from "./pages/security/Register";
+import Login from "./pages/security/Login";
 
 const App = () => (
     <>
@@ -16,6 +18,8 @@ const App = () => (
                     <Route  exact path="/products" component={Products} />
                     <Route  exact path="/orders/all" component={Orders} />
                     <Route  exact path="/orders/active" component={ActiveOrders} />
+                    <Route exact path="/register" component={Register} />
+                    <Route exact path="/login" component={Login} />
                 </Switch>
             </Bootstrapper>
         </BrowserRouter>

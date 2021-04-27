@@ -54,6 +54,10 @@ class NavigationBar extends React.Component {
             {
                 label: "Orders all",
                 location: "/orders/all"
+            },
+            {
+                label: "Sign out",
+                location: "/login"
             }
         ];
 
