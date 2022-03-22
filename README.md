@@ -1,4 +1,5 @@
-# Систем за работа во кафуле
+# Cafe_Managment_System_FRONTEND
+## Систем за работа во кафуле
 Групен проект со <a href="https://www.linkedin.com/in/hristijan-mirchevski-13b4351a7/"> Христијан Мирчевски </a>
 # Getting Started with Create React App
 
