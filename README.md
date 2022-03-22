@@ -1,4 +1,5 @@
 # Систем за работа во кафуле
+Групен проект со <a href="https://www.linkedin.com/in/hristijan-mirchevski-13b4351a7/"> Христијан Мирчевски </a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
